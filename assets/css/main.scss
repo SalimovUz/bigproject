@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // position: relative;
 }
 
 .container {
@@ -27,13 +28,13 @@ h1, h2, h3, h4, h5, h6, p {
 // End Normalize
 
 .navbar {
-  position: fixed;
-  top: 0;
+  background: none;
   width: 100%;
   height: 90px;
-  background-color: #fff;
 
   .header {
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -44,6 +45,94 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     .call__us {
+      display: flex;
+    }
+  }
+}
+
+.service__section {
+  
+  .service__bg {
+    background-image: url("../images/logos/background-service.svg");
+    // position: relative;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0 0px;
+    display: flex;
+    padding-left: 0px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.service__hero_left {
+  margin-top: 80px;
+
+  .hero__left_sub {
+    color: var(--gray-800, #424551);
+    /* small/regular */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+
+    span {
+      color: var(--gray-600, #9A9CA5);
+      /* small/regular */
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+    }
+  }
+  h1 {
+    width: 600px;
+    color: var(--gray-900, #1E212C);
+    /* display/1 */
+    font-family: Ubuntu;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 93.6px */
+    letter-spacing: 1px;
+    margin-top: 40px;
+  }
+
+  p {
+    margin-top: 24px;
+    width: 600px;
+    color: var(--gray-700, #787A80);
+    /* lead/regular */
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+}
+
+.offer__section {
+  display: flex;
+  margin-top: 120px;
+  gap: 105px;
+
+  .offer__section_right {
+    h1 {
+      color: var(--gray-900, #1E212C);
+      /* h1 */
+      font-family: Lato;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 130%; /* 59.8px */
+    }
+    .left__offer {
       display: flex;
     }
   }
