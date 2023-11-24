@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6, p {
   background: none;
   width: 100%;
   height: 90px;
+  z-index: 10;
 }
 .navbar .header {
   position: fixed;
@@ -39,85 +40,48 @@ h1, h2, h3, h4, h5, h6, p {
 .navbar .header .header__links {
   display: flex;
   gap: 40px;
+  margin-left: 60px;
+  margin-right: 102px;
 }
-.navbar .header .call__us {
-  display: flex;
-}
-
-.service__section .service__bg {
-  background-image: url("../images/logos/background-service.svg");
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  max-width: 1920px;
-  height: 600px;
-  margin: 0 auto;
-  padding: 0 0px;
-  display: flex;
-  padding-left: 0px;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.service__hero_left {
-  margin-top: 80px;
-}
-.service__hero_left .hero__left_sub {
+.navbar .header .header__links .header__link {
   color: var(--gray-800, #424551);
-  /* small/regular */
   font-family: Ubuntu;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 21px */
-}
-.service__hero_left .hero__left_sub span {
-  color: var(--gray-600, #9A9CA5);
-  /* small/regular */
-  font-family: Ubuntu;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 21px */
-}
-.service__hero_left h1 {
-  width: 600px;
-  color: var(--gray-900, #1E212C);
-  /* display/1 */
-  font-family: Ubuntu;
-  font-size: 72px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 93.6px */
-  letter-spacing: 1px;
-  margin-top: 40px;
+  line-height: 160%; /* 25.6px */
+  transition: all ease 0.6s;
 }
-.service__hero_left p {
-  margin-top: 24px;
-  width: 600px;
-  color: var(--gray-700, #787A80);
-  /* lead/regular */
+.navbar .header .header__links .header__link:hover {
+  color: var(--primary, #FF5A30);
   font-family: Ubuntu;
-  font-size: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+}
+.navbar .header .call__us {
+  margin-left: 36px;
+  display: flex;
+}
+.navbar .header .call__us .call__img {
+  margin-right: 10px;
+}
+.navbar .header .call__us .call__item h2 {
+  color: var(--gray-800, #424551);
+  /* small/bold */
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+}
+.navbar .header .call__us .call__item h3 {
+  color: var(--gray-900, #1E212C);
+  /* large/regular */
+  font-family: Ubuntu;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 30px */
-}
-
-.offer__section {
-  display: flex;
-  margin-top: 120px;
-  gap: 105px;
-}
-.offer__section .offer__section_right h1 {
-  color: var(--gray-900, #1E212C);
-  /* h1 */
-  font-family: Lato;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 130%; /* 59.8px */
-}
-.offer__section .offer__section_right .left__offer {
-  display: flex;
+  line-height: 150%; /* 27px */
 }/*# sourceMappingURL=main.css.map */
